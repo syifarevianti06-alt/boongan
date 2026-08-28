@@ -1,0 +1,135 @@
+<mxfile host="app.diagrams.net" modified="2026-08-28T01:05:00.000Z" agent="ChatGPT" version="24.7.17">
+  <diagram id="context" name="Diagram Konteks">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827">
+      <root>
+        <mxCell id="0"/><mxCell id="1" parent="0"/>
+        <mxCell id="admin" value="ADMIN" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="80" y="110" width="120" height="60" as="geometry"/></mxCell>
+        <mxCell id="pel" value="PELANGGAN" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="80" y="330" width="120" height="60" as="geometry"/></mxCell>
+        <mxCell id="pen" value="PENJUAL" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="80" y="550" width="120" height="60" as="geometry"/></mxCell>
+        <mxCell id="sys" value="SISTEM INFORMASI&lt;br&gt;PENJUALAN BAJU" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="430" y="300" width="300" height="150" as="geometry"/></mxCell>
+        <mxCell id="e1" value="Data admin&lt;br&gt;Data produk&lt;br&gt;Data kategori&lt;br&gt;Permintaan laporan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="admin" target="sys"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" value="Informasi produk&lt;br&gt;Informasi stok&lt;br&gt;Laporan penjualan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="sys" target="admin"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" value="Data pelanggan&lt;br&gt;Data pesanan&lt;br&gt;Data pembayaran" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="pel" target="sys"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" value="Informasi produk&lt;br&gt;Konfirmasi pesanan&lt;br&gt;Status pesanan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="sys" target="pel"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" value="Data transaksi&lt;br&gt;Data pengiriman&lt;br&gt;Perubahan status pesanan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="pen" target="sys"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e6" value="Data pesanan&lt;br&gt;Informasi transaksi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="sys" target="pen"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <diagram id="level0" name="DFD Level 0">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1169" pageHeight="827">
+      <root><mxCell id="0"/><mxCell id="1" parent="0"/>
+        <mxCell id="a" value="ADMIN" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="40" y="90" width="110" height="50" as="geometry"/></mxCell>
+        <mxCell id="p" value="PELANGGAN" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="40" y="340" width="110" height="50" as="geometry"/></mxCell>
+        <mxCell id="s" value="PENJUAL" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="40" y="590" width="110" height="50" as="geometry"/></mxCell>
+        <mxCell id="pr1" value="1.0&lt;br&gt;LOGIN" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="250" y="80" width="150" height="80" as="geometry"/></mxCell>
+        <mxCell id="pr2" value="2.0&lt;br&gt;KELOLA ADMIN" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="480" y="80" width="170" height="80" as="geometry"/></mxCell>
+        <mxCell id="pr3" value="3.0&lt;br&gt;KELOLA PRODUK" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="480" y="300" width="170" height="80" as="geometry"/></mxCell>
+        <mxCell id="pr4" value="4.0&lt;br&gt;KELOLA PESANAN" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="480" y="520" width="170" height="80" as="geometry"/></mxCell>
+        <mxCell id="pr5" value="5.0&lt;br&gt;KELOLA TRANSAKSI" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="820" y="410" width="190" height="80" as="geometry"/></mxCell>
+        <mxCell id="d1" value="D1 DATA USER" style="shape=partialRectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="760" y="80" width="180" height="50" as="geometry"/></mxCell>
+        <mxCell id="d2" value="D2 DATA PRODUK" style="shape=partialRectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="760" y="200" width="180" height="50" as="geometry"/></mxCell>
+        <mxCell id="d3" value="D3 DATA PESANAN" style="shape=partialRectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="760" y="530" width="180" height="50" as="geometry"/></mxCell>
+        <mxCell id="d4" value="D4 DATA TRANSAKSI" style="shape=partialRectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="1060" y="410" width="180" height="50" as="geometry"/></mxCell>
+        <mxCell id="x1" value="Data login" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="a" target="pr1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="x2" value="Data admin" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="a" target="pr2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="x3" value="Data produk" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="a" target="pr3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="x4" value="Data pesanan" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="p" target="pr4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="x5" value="Data transaksi" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="s" target="pr5"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="x6" value="Data user" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="pr1" target="d1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="x7" value="Data admin" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="pr2" target="d1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="x8" value="Data produk" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="pr3" target="d2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="x9" value="Data pesanan" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="pr4" target="d3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="x10" value="Data transaksi" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="pr5" target="d4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="x11" value="Update stok" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="pr5" target="d2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="x12" value="Pesanan untuk diproses" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="pr4" target="pr5"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <diagram id="p2" name="DFD Level 1 - Proses 2.0 Kelola Admin">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1169" pageHeight="827">
+      <root><mxCell id="0"/><mxCell id="1" parent="0"/>
+        <mxCell id="a" value="ADMIN" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="60" y="260" width="120" height="60" as="geometry"/></mxCell>
+        <mxCell id="p1" value="2.1 Tambah Admin" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="300" y="100" width="170" height="70" as="geometry"/></mxCell>
+        <mxCell id="p2" value="2.2 Edit Admin" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="300" y="230" width="170" height="70" as="geometry"/></mxCell>
+        <mxCell id="p3" value="2.3 Hapus Admin" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="300" y="360" width="170" height="70" as="geometry"/></mxCell>
+        <mxCell id="p4" value="2.4 Lihat Data Admin" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="300" y="490" width="170" height="70" as="geometry"/></mxCell>
+        <mxCell id="d" value="D1 DATA ADMIN" style="shape=partialRectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="650" y="270" width="180" height="55" as="geometry"/></mxCell>
+        <mxCell id="e1" value="Data admin baru" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="a" target="p1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" value="Perubahan data" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="a" target="p2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" value="Permintaan hapus" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="a" target="p3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" value="Permintaan data" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="a" target="p4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" value="Simpan" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="p1" target="d"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e6" value="Update" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="p2" target="d"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e7" value="Hapus" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="p3" target="d"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e8" value="Data admin" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="d" target="p4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e9" value="Informasi admin" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="p4" target="a"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <diagram id="p3" name="DFD Level 1 - Proses 3.0 Kelola Produk">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1169" pageHeight="827">
+      <root><mxCell id="0"/><mxCell id="1" parent="0"/>
+        <mxCell id="a" value="ADMIN" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="60" y="270" width="120" height="60" as="geometry"/></mxCell>
+        <mxCell id="p1" value="3.1 Tambah Produk" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="300" y="90" width="180" height="70" as="geometry"/></mxCell>
+        <mxCell id="p2" value="3.2 Edit Produk" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="300" y="210" width="180" height="70" as="geometry"/></mxCell>
+        <mxCell id="p3" value="3.3 Hapus Produk" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="300" y="330" width="180" height="70" as="geometry"/></mxCell>
+        <mxCell id="p4" value="3.4 Lihat Produk" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="300" y="450" width="180" height="70" as="geometry"/></mxCell>
+        <mxCell id="d" value="D2 DATA PRODUK" style="shape=partialRectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="660" y="270" width="180" height="55" as="geometry"/></mxCell>
+        <mxCell id="e1" value="Data produk" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="a" target="p1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" value="Perubahan produk" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="a" target="p2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" value="Permintaan hapus" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="a" target="p3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" value="Permintaan produk" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="a" target="p4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" value="Simpan" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="p1" target="d"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e6" value="Update" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="p2" target="d"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e7" value="Hapus" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="p3" target="d"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e8" value="Data produk" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="d" target="p4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e9" value="Informasi produk &amp; stok" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="p4" target="a"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <diagram id="p4" name="DFD Level 1 - Proses 4.0 Kelola Pesanan">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1169" pageHeight="827">
+      <root><mxCell id="0"/><mxCell id="1" parent="0"/>
+        <mxCell id="pel" value="PELANGGAN" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="50" y="250" width="130" height="60" as="geometry"/></mxCell>
+        <mxCell id="pen" value="PENJUAL" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="50" y="500" width="130" height="60" as="geometry"/></mxCell>
+        <mxCell id="p1" value="4.1 Buat Pesanan" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="300" y="120" width="180" height="70" as="geometry"/></mxCell>
+        <mxCell id="p2" value="4.2 Konfirmasi Pesanan" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="300" y="260" width="190" height="70" as="geometry"/></mxCell>
+        <mxCell id="p3" value="4.3 Update Status Pesanan" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="300" y="400" width="210" height="70" as="geometry"/></mxCell>
+        <mxCell id="d" value="D3 DATA PESANAN" style="shape=partialRectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="680" y="270" width="190" height="55" as="geometry"/></mxCell>
+        <mxCell id="e1" value="Data pesanan" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="pel" target="p1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" value="Simpan pesanan" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="p1" target="d"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" value="Data pesanan" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="d" target="p2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" value="Konfirmasi" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="p2" target="pel"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" value="Pesanan untuk diproses" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="d" target="p3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e6" value="Update status" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="pen" target="p3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e7" value="Status pesanan" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="p3" target="d"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e8" value="Status pesanan" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="p3" target="pel"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <diagram id="p5" name="DFD Level 1 - Proses 5.0 Kelola Transaksi">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1169" pageHeight="827">
+      <root><mxCell id="pen" value="PENJUAL" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="50" y="270" width="120" height="60" as="geometry"/></mxCell>
+        <mxCell id="adm" value="ADMIN" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="50" y="520" width="120" height="60" as="geometry"/></mxCell>
+        <mxCell id="p1" value="5.1 Proses Transaksi" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="300" y="150" width="190" height="70" as="geometry"/></mxCell>
+        <mxCell id="p2" value="5.2 Update Stok" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="300" y="290" width="180" height="70" as="geometry"/></mxCell>
+        <mxCell id="p3" value="5.3 Buat Laporan Penjualan" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="300" y="450" width="210" height="70" as="geometry"/></mxCell>
+        <mxCell id="d1" value="D4 DATA TRANSAKSI" style="shape=partialRectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="680" y="160" width="190" height="55" as="geometry"/></mxCell>
+        <mxCell id="d2" value="D2 DATA PRODUK" style="shape=partialRectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="680" y="300" width="180" height="55" as="geometry"/></mxCell>
+        <mxCell id="e1" value="Data transaksi" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="pen" target="p1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" value="Simpan transaksi" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="p1" target="d1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" value="Data transaksi" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="d1" target="p3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" value="Permintaan laporan" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="adm" target="p3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" value="Laporan penjualan" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="p3" target="adm"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e6" value="Update stok" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="p1" target="p2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e7" value="Stok terbaru" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="p2" target="d2"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
